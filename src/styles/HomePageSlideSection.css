@@ -1,0 +1,38 @@
+/* src/components/Footer.css */
+@import '../index.css';
+@import 'bootstrap/dist/css/bootstrap.css';
+
+
+.image__container img {
+    width: 400px;
+    border-radius: 52% 48% 72% 28% / 39% 30% 70% 61%;
+}
+
+.slide__info h2 {
+    color: var(--main-color-yell);
+    font-size: 36px;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.slide__info p {
+    color: var(--text-color-1);
+    font-size: 18px;
+}
+
+.image__containerb img {
+    width: 400px;
+    border-radius: 13% 96% 57% 51% / 51% 46% 40% 47%
+}
+
+.slide__infob h2 {
+    color: var(--main-color-blue);
+    font-size: 36px;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.slide__infob p {
+    color: var(--text-color-1);
+    font-size: 18px;
+}

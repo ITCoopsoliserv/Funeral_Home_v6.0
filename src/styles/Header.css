@@ -1,0 +1,120 @@
+/* src/components/Footer.css */
+@import '../index.css';
+@import 'bootstrap/dist/css/bootstrap.css';
+
+
+/* HeaderNav*/
+
+.headernav__scroll {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 107px;
+}
+
+.headernav__logo img {
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headernav__logo span {
+    color: var(--main-color-logo);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headernav__text__logo1 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headernav__text__logo2 {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headernav__link a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--main-color-logo);
+    position: relative;
+}
+
+.headernav__link a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--main-color-logo);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.headernav__link a:hover::after {
+    opacity: 1;
+}
+
+/* HeaderNav Scroll*/
+
+.headernav__noscroll {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: rgba(18, 129, 64, 0.85);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headernav__logoscroll img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headernav__logoscroll span {
+    color: white;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headernav__text__logo1scroll {
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 500;
+
+}
+
+.headernav__text__logo2scroll {
+    font-size: 8px;
+    letter-spacing: .5px;
+
+}
+
+.headernav__linkscroll a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+.headernav__linkscroll a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.headernav__linkscroll a:hover::after {
+    opacity: 1;
+}

@@ -1,0 +1,10 @@
+/* src/components/Footer.css */
+@import '../index.css';
+@import 'bootstrap/dist/css/bootstrap.css';
+
+
+/* FooterCopyrihgt*/
+
+.footer__copyright {
+    background-color: var(--bg-FooterCopyright);
+}

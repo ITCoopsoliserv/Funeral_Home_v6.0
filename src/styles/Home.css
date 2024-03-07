@@ -1,0 +1,125 @@
+/* src/components/Footer.css */
+@import '../index.css';
+@import 'bootstrap/dist/css/bootstrap.css';
+
+/* BackGround Principal*/
+
+.bg__main {
+    background-image: url('../../public/img/BackgroundMain.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Home*/
+.bodyHomePage {
+    background-color: transparent
+}
+
+.caption {
+    position: absolute;
+}
+
+.HomePage__sliders .caption {
+    bottom: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+.HomePage__sliders {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 105px;
+}
+
+.HomePage__sliders img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.HomePage__sliders .dot {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.HomePage__sliders .dot li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.HomePage__sliders .dot button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.4;
+    border-color: transparent;
+}
+
+
+.HomePage__sliders .dot .active {
+    opacity: 1;
+    background-color: var(--slider-carrousel);
+}
+
+.HomePage__sliders .dark {
+    filter: brightness(50%);
+}
+
+.HomePage__sliders .dark .caption {
+    color: black;
+}
+
+.HomePage__sliders .light {
+    filter: brightness(100%);
+}
+
+.HomePage__sliders .light .caption {
+    color: white;
+}
+
+.caption p {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.caption a {
+    text-decoration: none;
+    background-color: rgba(211, 211, 211, 0.888);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--main-color-logo);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+}
+
+.caption a:hover {
+    padding: 12px;
+    transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-dark p {
+    color: var(--slider-carrousel)
+}
+
+.text-light p {
+    color: var(--slider-carrousel)
+}

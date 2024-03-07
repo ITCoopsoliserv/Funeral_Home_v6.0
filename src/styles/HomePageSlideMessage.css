@@ -1,0 +1,39 @@
+/* src/components/Footer.css */
+@import '../index.css';
+@import 'bootstrap/dist/css/bootstrap.css';
+
+
+.wrap__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.wrap__icon {
+    margin-left: 10px;
+}
+
+.wrap__icon h4 {
+    color: var(--text-color-1);
+    font-weight: 600;
+    margin: 0;
+    font-size: 18px;
+}
+
+.wrap__icon p {
+    color: var(--text-color-1);
+    font-weight: 500;
+    margin: 0;
+}
+
+.slideImg {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (max-width: 460px) {
+    .wrap-section {
+        margin-left: 60px;
+    }
+}

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+:root {
+
+  /*Backgrunds*/
+  --bg-FooterCopyright: #1a1919;
+
+  /*Colors*/
+  --main-color-logo: #128140;
+  --slider-carrousel: #40cc7a;
+  --main-color-yell: #ffc107;
+  --main-color-red: #ff6347;
+  --main-color-blue: #007bff;
+
+  --text-color-1: #222222;
+}
