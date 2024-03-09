@@ -1,8 +1,6 @@
 import React from "react";
 import "../styles/Contact.css"
 import emailjs from '@emailjs/browser';
-import Print from "react-to-print";
-
 
 const Contact = () => {
   const refForm = React.useRef();

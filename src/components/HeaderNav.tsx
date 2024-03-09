@@ -45,7 +45,7 @@ const HeaderNav = () => {
                             <NavLink to="/">Home</NavLink>
                             <NavLink to="/">Servicios funerarios</NavLink>
                             <NavLink to="/">Nosotros</NavLink>
-                            <NavLink to="/">Contáctanos</NavLink>
+                            <NavLink to="./ContactPage">Contáctanos</NavLink>
                         </div>
                     </div>
                 </div>
