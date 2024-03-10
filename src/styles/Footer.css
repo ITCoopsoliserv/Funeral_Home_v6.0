@@ -3,8 +3,90 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
 
+
+footer {
+    background-color: var(--bg-FooterCopyright);
+}
+
+footer:not(:first-child) {
+    border-top: 1px solid white;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 15px;
+}
+
+.footer-main h5 {
+    color: var(--footer-color-text-1);
+    font-weight: 600;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section a:hover {
+    padding-left: 4px;
+}
+
+.footer-link {
+    text-align: left;
+}
+
+.footer-social img:hover {
+    background-color: white;
+    border-radius: 4px;
+}
+
+
 /* FooterCopyrihgt*/
 
 .footer__copyright {
     background-color: var(--bg-FooterCopyright);
+    border-top: 1px solid #ccc;
+}
+
+
+@media (max-width: 980px) {
+    .footer-section {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .input-group-text {
+        font-size: 14px;
+    }
+
+    .footer-top {
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-direction: column;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    .footer-link {
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

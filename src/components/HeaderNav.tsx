@@ -8,7 +8,7 @@ const HeaderNav = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.pageYOffset > 300) {
+            if (window.pageYOffset > 100) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
