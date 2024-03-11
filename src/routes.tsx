@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import ServicesPage from './pages/ServicesPage';
+import ContactAlert from './components/ContactAlert'
 
 const AppRoutes = () => {
     return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
                     <Route index element={<HomePage />} />
                     <Route path="ContactPage" element={<ContactPage />} />
                     <Route path="/services" element={<ServicesPage />} />
+                    <Route path="/contactAlert" element={<ContactAlert />} />
                     <Route path="*" element={<Layout />} />
                 </Route>
             </Routes>

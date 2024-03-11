@@ -2,8 +2,11 @@ import React from "react";
 import "../styles/Contact.css"
 import emailjs from '@emailjs/browser';
 
+
 const Contact = () => {
   const refForm = React.useRef();
+  
+  
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -11,20 +14,22 @@ const Contact = () => {
     const serviceId = "service_84mtioi"
     const templateId = "template_01blx92"
     const apiKey = "mIp1sBwXYGAhqlhX6"
-    
+
     emailjs.sendForm(serviceId, templateId, refForm.current, {
-        publicKey: apiKey,
+        publicKey: apiKey
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          window.location.replace('http://localhost:3000/contactAlert')
         
         },
         (error) => {
           console.log('FAILED...', error.text);
+          
         },
       );
   };
+
 
 
   return (
@@ -33,6 +38,8 @@ const Contact = () => {
 {/* se importa los iconos de boostrap*/}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
      
+
+      
       <main id="main">
 
         <div className="breadcrumbs" data-aos="fade-in">
@@ -45,7 +52,7 @@ const Contact = () => {
 
         <section id="contact" className="contact">
           <div data-aos="fade-up">
-            <iframe style={{ border: 0, width: "100%", height: "350px" }} src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7954.984978248079!2d-74.1171235!3d4.5048574!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1709911602916!5m2!1ses!2sco" frameBorder="0" allowFullScreen></iframe>
+            <iframe style={{ border: 0, width: "100%", height: "200px" }} src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7954.984978248079!2d-74.1171235!3d4.5048574!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1709911602916!5m2!1ses!2sco" frameBorder="0" allowFullScreen></iframe>
           </div>
 
           <div className="container" data-aos="fade-up">
@@ -78,7 +85,7 @@ const Contact = () => {
               </div>
 
               <div className="col-lg-8 mt-5 mt-lg-0">
-
+             
                 <form action="" ref={refForm} onSubmit={sendEmail} role="form" className="php-email-form">
                   <div className="row">
                     <div className="col-md-6 form-group">
@@ -97,10 +104,12 @@ const Contact = () => {
                     <input type="checkbox" className="form-check-input" style={{height: "15px"}} id="exampleCheck1" required/>
                     <label className="form-check-label" for="exampleCheck1">Autorizo a Funeral Home el tratamiento de mis datos personales conforme a las finalidades establecidas en la base de datos de Clientes.</label>
                   </div>
-                  <div className="text-center"><button type="submit">Enviar mensaje</button></div>
-                  
-                </form>
+
+                  <div className="text-center" ><button  type="submit">Enviar mensaje</button></div>
                 
+                
+                </form>
+           
               </div>
 
             </div>
@@ -115,3 +124,4 @@ const Contact = () => {
 }
 
 export default Contact
+
