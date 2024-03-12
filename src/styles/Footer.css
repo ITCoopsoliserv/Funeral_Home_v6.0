@@ -39,6 +39,7 @@ footer:not(:first-child) {
 
 .footer-section a:hover {
     padding-left: 4px;
+    color: var(--main-color-yell);
 }
 
 .footer-link {
@@ -46,7 +47,7 @@ footer:not(:first-child) {
 }
 
 .footer-social img:hover {
-    background-color: white;
+    background-color: var(--main-color-yell);
     border-radius: 4px;
 }
 
@@ -54,8 +55,9 @@ footer:not(:first-child) {
 /* FooterCopyrihgt*/
 
 .footer__copyright {
-    background-color: var(--bg-FooterCopyright);
     border-top: 1px solid #ccc;
+    background-image: url('../../public/img/Footer/background-space.jpg');
+    background-size: contain;
 }
 
 

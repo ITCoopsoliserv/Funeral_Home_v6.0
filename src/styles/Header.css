@@ -5,6 +5,7 @@
 
 /* HeaderNav*/
 
+
 .headernav__scroll {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -45,6 +46,10 @@
     position: relative;
 }
 
+.headernav__link a:hover {
+    padding-top: 2px;
+}
+
 .headernav__link a::after {
     content: "";
     display: block;
@@ -70,6 +75,12 @@
     background-color: rgba(18, 129, 64, 0.85);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.headernav__logoscroll,
+.headernav__logo {
+    text-decoration: none;
+}
+
 
 .headernav__logoscroll img {
     width: 50px;
@@ -117,4 +128,33 @@
 
 .headernav__linkscroll a:hover::after {
     opacity: 1;
+}
+
+.headernav__text__af {
+    background-color: var(--main-color-yell);
+    text-decoration: none;
+    color: white;
+    padding: 8px 30px 8px 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: var(--main-color-yell);
+    }
+
+    50% {
+        transform: scale(1.1);
+        background-color: var(--main-color-red);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: var(--main-color-yell);
+    }
 }

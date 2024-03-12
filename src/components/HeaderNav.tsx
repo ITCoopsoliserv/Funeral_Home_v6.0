@@ -28,7 +28,7 @@ const HeaderNav = () => {
             <div className='d-flex justify-content-around'>
 
                 {/*Logo*/}
-                <div className={`col-4 ${isScrolled ? 'headernav__logoscroll' : 'headernav__logo'}`} >
+                <NavLink to="/" className={`col-4 ${isScrolled ? 'headernav__logoscroll' : 'headernav__logo'}`}>
                     <div className='d-flex flex-column align-items-center'>
                         <img src={isScrolled ? "./img/Logo-funeral-blanco-bg.png" : "./img/Logo-funeral-verde-bg.png"} />
                         <div className='d-flex flex-column align-items-center'>
@@ -36,18 +36,23 @@ const HeaderNav = () => {
                             <span className={`${isScrolled ? 'headernav__text__logo2scroll' : 'headernav__text__logo2'}`}>TU APOYO CUANDO MAS LO NECESITAS</span>
                         </div>
                     </div>
-                </div>
+                </NavLink>
 
                 {/*links*/}
                 <div className='headernav__links col-5 d-flex align-items-center'>
                     <div className='container-xxl'>
+
                         <div className={`d-flex justify-content-around ${isScrolled ? 'headernav__linkscroll' : 'headernav__link'}`} >
-                            <NavLink to="/">Home</NavLink>
-                            <NavLink to="/">Servicios funerarios</NavLink>
-                            <NavLink to="/">Nosotros</NavLink>
+                            <NavLink to="/">Inicio</NavLink>
+                            <NavLink to="./ServicesPage">Servicios funerarios</NavLink>
+                            <NavLink to="./NosotrosPage">Nosotros</NavLink>
                             <NavLink to="./ContactPage">Contáctanos</NavLink>
                         </div>
+
                     </div>
+
+                    <NavLink to="./ServicesPage" className='headernav__text__af'>Afiliaciones</NavLink>
+
                 </div>
             </div>
             <div></div>

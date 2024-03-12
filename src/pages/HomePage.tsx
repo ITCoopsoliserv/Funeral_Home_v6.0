@@ -5,11 +5,15 @@ import HomePageSlideMessage from '../components/HomePageSlideMessage';
 import HomeSlideSectionA from '../components/HomeSlideSectionA';
 import HomeSlideSectionB from '../components/HomeSlideSectionB';
 import HomeSlideAliados from '../components/HomeSlideAliados';
+import Meta from '../components/Meta';
+import HomeSlideServices from '../components/HomeSlideServices';
 
 const HomePage = () => {
     return (
 
+
         <div className=''>
+            <Meta title={'Inicio'} />
 
             <HomePageSlider />
 
@@ -17,7 +21,8 @@ const HomePage = () => {
 
                 <HomePageSlideMessage />
                 <HomeSlideSectionA />
-                <HomeSlideAliados />
+                {/*<HomeSlideAliados /> */}
+                <HomeSlideServices />
                 <HomeSlideSectionB />
                 <div className='py-5'>
                     <h1>Este es el homepage</h1>
