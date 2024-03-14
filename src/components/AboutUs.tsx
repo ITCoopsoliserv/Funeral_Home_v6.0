@@ -12,7 +12,7 @@ return(
         <div className="breadcrumbs" data-aos="fade-in">
           <div className="container">
             <h2>Nosotros</h2>
-            <p>Conoce un poco más sobre nuestro legado, estaremos contigo en los momentos mas difíciles.</p>
+            <p>Conoce un poco más sobre nuestro legado, estaremos contigo en los momentos más difíciles.</p>
           </div>
         </div>
 
@@ -24,7 +24,7 @@ return(
                         <div className="timeline-panel">
                             <div className="timeline-heading">
                             <h4>Más de 6 años</h4>
-                            <h4 className="subheading">¿Quienes somos?</h4>
+                            <h4 className="subheading">¿Quiénes somos?</h4>
                             </div>
                             <div className="timeline-body">
                                 <p className="text-muted">Somos una Cooperativa con más de 6 años de experiencia dedicada a prestar servicios funerarios, pre exequiales y todo lo relacionado con pompas fúnebres a personas naturales y jurídicas en todo el territorio Colombiano.</p>
