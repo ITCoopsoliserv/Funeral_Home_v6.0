@@ -45,7 +45,7 @@ const HeaderNav = () => {
                         <div className={`d-flex justify-content-around ${isScrolled ? 'headernav__linkscroll' : 'headernav__link'}`} >
                             <NavLink to="/">Inicio</NavLink>
                             <NavLink to="./ServicesPage">Servicios funerarios</NavLink>
-                            <NavLink to="./NosotrosPage">Nosotros</NavLink>
+                            <NavLink to="./abautUs">Nosotros</NavLink>
                             <NavLink to="./ContactPage">Contáctanos</NavLink>
                         </div>
 
