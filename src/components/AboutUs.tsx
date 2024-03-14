@@ -50,7 +50,7 @@ return(
                                 <h4>Año 2025</h4>
                                 <h4 className="subheading">Nos proyectamos</h4>
                             </div>
-                            <div className="timeline-body"><p className="text-muted">FUNERAL HOME, estará en el año 2025 dentro de las mejores y mas sobresalientes I empresas del sector de previsión exequial, con cubrimiento nacional, manteniendo excelentes estándares de calidad en nuestros servicios. garantizado por los procedimientos y orientación correcta, ofreciendo la tranquilidad y preferencia de las familias colombianas.</p></div>
+                            <div className="timeline-body"><p className="text-muted">FUNERAL HOME, estará en el año 2025 dentro de las mejores y mas sobresalientes empresas del sector de previsión exequial, con cubrimiento nacional, manteniendo excelentes estándares de calidad en nuestros servicios. garantizado por los procedimientos y orientación correcta, ofreciendo la tranquilidad y preferencia de las familias colombianas.</p></div>
                         </div>
                     </li>
                     
