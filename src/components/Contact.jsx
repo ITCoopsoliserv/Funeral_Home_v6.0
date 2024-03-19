@@ -52,7 +52,7 @@ const Contact = () => {
 
         <section id="contact" className="contact">
           <div data-aos="fade-up">
-            <iframe style={{ border: 0, width: "100%", height: "200px" }} src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7954.984978248079!2d-74.1171235!3d4.5048574!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1709911602916!5m2!1ses!2sco" frameBorder="0" allowFullScreen></iframe>
+            <iframe style={{ border: 0, width: "100%", height: "200px" }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6568845686143!2d-74.10401462596313!3d4.655133742052853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b97cc2bcab9%3A0x2ee1eada9f2b43fb!2sCl.%2044%20%2367a-55%20Piso%203%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1710866236403!5m2!1ses!2sco" frameBorder="0" allowFullScreen></iframe>
           </div>
 
           <div className="container" data-aos="fade-up">
@@ -65,19 +65,19 @@ const Contact = () => {
                     <i className="bi bi-geo-alt"></i>
 
                     <h4>Dirección:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>Calle 44 #67A-55 Piso 3 Barrio Salitre el greco, Bogotá</p>
                   </div>
 
                   <div className="email">
                     <i className="bi bi-envelope"></i>
                     <h4>Correo Electrónico:</h4>
-                    <p>FuneralHom@example.com</p>
+                    <p>atencionalclientefuneralhome@gmail.com</p>
                   </div>
 
                   <div className="phone">
                     <i className="bi bi-phone"></i>
                     <h4>Telélefono:</h4>
-                    <p>589 55488 55</p>
+                    <p>+57 350 5656288</p>
                   </div>
 
                 </div>
@@ -100,9 +100,9 @@ const Contact = () => {
                     <textarea className="form-control" name="message" rows={5} placeholder="Mensaje" required></textarea>
                   </div>
 
-                  <div className="form-check" style={{padding:"17px", fontSize: "14px"}}>
-                    <input type="checkbox" className="form-check-input" style={{height: "15px"}} id="exampleCheck1" required/>
-                    <label className="form-check-label" for="exampleCheck1">Autorizo a Funeral Home el tratamiento de mis datos personales conforme a las finalidades establecidas en la base de datos de Clientes.</label>
+                  <div className="form-check" style={{padding:"17px", fontSize: "15px"}}>
+                    <input type="checkbox" className="form-check-input" style={{height: "15px", borderColor: "#128140"}} id="exampleCheck1" required/>
+                    <label className="form-check-label" for="exampleCheck1">Autorizo a Funeral Home el tratamiento de mis datos personales según la <a href="./documentos/TRATAMIENTO_DE_DATOS.pdf">Política de tratamiento de datos.</a></label>
                   </div>
 
                   <div className="text-center" ><button  type="submit">Enviar mensaje</button></div>
